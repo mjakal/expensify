@@ -26,7 +26,7 @@ Select Authentication from the Develop sub menu and click on the SIGN-IN METHOD 
 
 Select Database from the Develop sub menu and choose Realtime Database. Then, click on the RULES tab and Replace default Firebase rules with the code snippet provided below. Click on a PUBLISH button at the top of the RULES text area.
 
-'''
+```javascript
 {
   "rules": {
     ".read": false,
@@ -62,7 +62,7 @@ Select Database from the Develop sub menu and choose Realtime Database. Then, cl
     }
   }
 }
-'''
+```
 
 ## Firebase API key
 
