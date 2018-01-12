@@ -2,6 +2,8 @@
 
 Simple react redux CRUD app.
 
+[App demo](https://expensify1521.herokuapp.com/ "Expensify Demo")
+
 ## How to run
 
 Clone the repo, cd into folder and run this command.
