@@ -70,7 +70,7 @@ Select Project Overview from the menu and click on Add Firebase to your web app.
 
 # Run the app in development mode
 
-To run the app in development mode, cd into expensify root directory and edit the .env.development.sample file. Replace the values with Firebase API authentication data provided in previous step. Save changes and rename the file from ".env.development.sample" to ".env.development" and run this command from your terminal.
+To run the app in development mode, cd into project folder and edit the .env.development.sample file. Replace the values with Firebase API authentication data provided in previous step. Save changes and rename the file from ".env.development.sample" to ".env.development" and run this command from your terminal.
 
 ```
 npm run dev-server
@@ -79,7 +79,20 @@ Open your browser and go to this address:
 
 http://localhost:8080/
 
-# Run the app in production
+# Run the app in production mode
+
+Depending on your OS you need to setup environment variables. On Linux edit the .bashrc file and export these keys. Replace the key values with Firebase API authentication data.
+
+```
+export FIREBASE_API_KEY=YOUR_API_KEY
+export FIREBASE_AUTH_DOMAIN=YOUR_AUTH_DOMAIN
+export FIREBASE_DATABASE_URL=YOUR_DATABASE_URL
+export FIREBASE_PROJECT_ID=YOUR_PROJECT_ID
+export FIREBASE_STORAGE_BUCKET=YOUR_STORAGE_BUCKET
+export FIREBASE_MESSAGING_SENDER_ID=YOUR_SENDER_ID
+```
+
+Open your terminal, cd into project folder and run these commands.
 
 ```
 npm run build:prod
@@ -89,5 +102,3 @@ npm start
 Open your browser and go to this address:
 
 http://localhost:3000/
-
-## How to run in development mode
